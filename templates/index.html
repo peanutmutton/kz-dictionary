@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'dictionary/index.css' %}">
+</head>
+<body>
+   <header class="website-header">
+        <img src="images/omar.jpeg" class="logo">
+        <img src="images/abuali.jpeg" class="logo">
+        <p class="browse-paragraph">Browse</p>
+    <div class="search-level">
+        <input placeholder="Search" class="search-bar">
+        <button class="add-button">+</button>
+        <button class="add-button">=</button>
+    </div>
+   </header>
+   {% for word in words %}
+   	<h1 class="word-title">{{ word }}</h1>
+   {% endfor %}
+
+
+    <p class="word-description">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a leo nisl. Aliquam erat volutpat. Nunc nisl diam, vestibulum et tellus in, mollis condimentum est. Suspendisse ullamcorper malesuada lacus, in tempus leo porta tempor. Vestibulum venenatis non ipsum eget luctus. Nunc dignissim suscipit felis, at laoreet dui fermentum vel. Cras egestas condimentum orci nec sodales. Aenean tristique eu urna vitae tincidunt.
+
+Vivamus rhoncus sollicitudin euismod. Pellentesque nibh felis, egestasLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a leo nisl. Aliquam erat volutpat. Nunc nisl diam, vestibulum et tellus in, mollis condimentum est. Suspendisse ullamcorper malesuada lacus, in tempus leo porta tempor. Vestibulum venenatis non ipsum eget luctus. Nunc dignissim suscipit felis, at laoreet dui fermentum vel. Cras egestas condimentum orci nec sodales. Aenean tristique eu urna vitae tincidunt. Vivamus rhoncus sollicitudin euismod. Pellentesque nibh felis, egestas nec ultricies sed, cursus in sem. Phasellus laoreet scelerisque elit, et scelerisque mi facilisis ultrices. In hac habitasse platea dictumst. Sed eget accumsan dolor. Maecenas scelerisque tellus mi, ac dignissim justo pellentesque imperdiet. Phasellus vehicula purus eu enim volutpat, vitae scelerisque sem tempus. Proin ullamcorper, purus a porttitor convallis, neque lacus iaculis ante, sed tempus erat tortor quis urna. Nulla facilisi.  nec ultricies sed, cursus in sem. Phasellus laoreet scelerisque elit, et scelerisque mi facilisis ultrices. In hac habitasse platea dictumst. Sed eget accumsan dolor. Maecenas scelerisque tellus mi, ac dignissim justo pellentesque imperdiet. Phasellus vehicula purus eu enim volutpat, vitae scelerisque sem tempus. Proin ullamcorper, purus a porttitor convallis, neque lacus iaculis ante, sed tempus erat tortor quis urna. Nulla facilisi. </p>
+    <div class="pagination">
+        <button class="page-button">1</button>
+        <button class="page-button">2</button>
+        <button class="page-button">3</button>
+        <button class="page-button">4</button>
+        <button class="page-button">5</button>
+    </div>
+    <div class="control-buttons">
+        <button class="next-button">Next</button>
+        <button class="next-button">Last</button>
+    </div>
+</body>
+</html>

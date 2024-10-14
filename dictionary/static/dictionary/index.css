@@ -1,0 +1,95 @@
+.website-header {
+    background-color: blue;
+}
+
+.logo {
+    height: 100px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 100px;
+}
+
+.browse-paragraph {
+    cursor: pointer;
+    display: block;
+    color: yellow;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.search-level {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.search-bar {
+    width: 800px;
+    font-size: 24px;
+    margin-right: 10px;
+
+}
+
+.add-button {
+    border-radius: 80px;
+    border-style: solid;
+    border: none;
+    padding: 0 12px 6px 12px;
+    background-color: yellow;
+    color: blue;
+    font-size: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.word-title {
+    color: black;
+    text-align: center;
+}
+
+.word-description {
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 20px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.page-button {
+    border-radius: 20px;
+    border: none;
+    padding: 12px 20px 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 6px;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.page-button:hover {
+    background-color: blue;
+    color: yellow;
+}
+
+.control-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.next-button {
+    border: none;
+    margin-right: 15px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.next-button:hover {
+    background-color: blue;
+    color: yellow;
+}
