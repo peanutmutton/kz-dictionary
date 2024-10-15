@@ -1,7 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}
+    	Title
+    {% endblock %}</title>
+    <link rel="stylesheet"  {% block css %}
+    	href="{% static 'dictionary/index.css' %}"
+    {% endblock %} >
+</head>
+<body>
 {% block header %}
 	<header class="website-header">
-        <img src="images/omar.jpeg" class="logo">
-        <img src="images/abuali.jpeg" class="logo">
+        <img src="{% static 'dictionary/omar.jpeg'%}" class="logo">
+        <img src="{% static 'dictionary/abuAli2.jpg'%}" class="logo">
         <p class="browse-paragraph">Browse</p>
     <div class="search-level">
         <input placeholder="Search" class="search-bar">
@@ -15,3 +29,4 @@
 {% block content %}
 	Lorem ipsum
 {% endblock %}
+</body>

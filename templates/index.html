@@ -1,22 +1,9 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{% static 'dictionary/index.css' %}">
-</head>
-<body>
-   <header class="website-header">
-        <img src="images/omar.jpeg" class="logo">
-        <img src="images/abuali.jpeg" class="logo">
-        <p class="browse-paragraph">Browse</p>
-    <div class="search-level">
-        <input placeholder="Search" class="search-bar">
-        <button class="add-button">+</button>
-        <button class="add-button">=</button>
-    </div>
-   </header>
+
+  {% block content %}
+
+
    {% for word in words %}
    	<h1 class="word-title">{{ word }}</h1>
    {% endfor %}
@@ -38,5 +25,4 @@ Vivamus rhoncus sollicitudin euismod. Pellentesque nibh felis, egestasLorem ipsu
         <button class="next-button">Next</button>
         <button class="next-button">Last</button>
     </div>
-</body>
-</html>
+{% endblock %}

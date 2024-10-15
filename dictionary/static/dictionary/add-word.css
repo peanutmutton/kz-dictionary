@@ -1,0 +1,51 @@
+body {
+    background-color: #303087;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    text-decoration: underline;
+}
+
+.new-word-data {
+    background-color: white;
+    color: white;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding: 20px;
+}
+
+p {
+    color: black;
+}
+
+input {
+    width: 800px;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.definition-input {
+    height: 150px;
+}
+
+.example-input {
+    height: 100px;
+}
+
+.div-button {
+    text-align: center;
+}
+
+.submit-button {
+    margin-top: 20px;
+    width: 1000px;
+    height: 75px;
+    background-color: yellow;
+    color: blue;
+    font-size: 36px;
+    border: none;
+    cursor: pointer;
+}
